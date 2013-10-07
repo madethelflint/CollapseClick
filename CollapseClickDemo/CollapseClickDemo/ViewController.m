@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
     myCollapseClick.CollapseClickDelegate = self;
+    myCollapseClick.useNibHeight = YES;
     [myCollapseClick reloadCollapseClick];
     
     // If you want a cell open on load, run this method:
@@ -86,22 +87,22 @@
 
 // Optional Methods
 
--(UIColor *)colorForCollapseClickTitleViewAtIndex:(int)index {
-    return [UIColor colorWithRed:223/255.0f green:47/255.0f blue:51/255.0f alpha:1.0];
-}
-
-
--(UIColor *)colorForTitleLabelAtIndex:(int)index {
-    return [UIColor colorWithWhite:1.0 alpha:0.85];
-}
-
--(UIColor *)colorForTitleArrowAtIndex:(int)index {
-    return [UIColor colorWithWhite:0.0 alpha:0.25];
-}
-
--(void)didClickCollapseClickCellAtIndex:(int)index isNowOpen:(BOOL)open {
-    NSLog(@"%d and it's open:%@", index, (open ? @"YES" : @"NO"));
-}
+//-(UIColor *)colorForCollapseClickTitleViewAtIndex:(int)index {
+//    return [UIColor colorWithRed:223/255.0f green:47/255.0f blue:51/255.0f alpha:1.0];
+//}
+//
+//
+//-(UIColor *)colorForTitleLabelAtIndex:(int)index {
+//    return [UIColor colorWithWhite:1.0 alpha:0.85];
+//}
+//
+//-(UIColor *)colorForTitleArrowAtIndex:(int)index {
+//    return [UIColor colorWithWhite:0.0 alpha:0.25];
+//}
+//
+//-(void)didClickCollapseClickCellAtIndex:(int)index isNowOpen:(BOOL)open {
+//    NSLog(@"%d and it's open:%@", index, (open ? @"YES" : @"NO"));
+//}
 
 
 #pragma mark - TextField Delegate for Demo

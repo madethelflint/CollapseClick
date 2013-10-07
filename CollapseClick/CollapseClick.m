@@ -8,7 +8,14 @@
 
 #import "CollapseClick.h"
 
+@interface CollapseClick()
+
+@property (assign, nonatomic) CGFloat headerHeight;
+
+@end
+
 @implementation CollapseClick
+
 @synthesize CollapseClickDelegate;
 
 - (id)initWithFrame:(CGRect)frame
@@ -74,39 +81,43 @@
     for (int xx = 0; xx < [CollapseClickDelegate numberOfCellsForCollapseClick]; xx++) {
         // Create Cell
         CollapseClickCell *cell = [CollapseClickCell newCollapseClickCellWithTitle:[CollapseClickDelegate titleForCollapseClickAtIndex:xx] index:xx content:[CollapseClickDelegate viewForCollapseClickContentViewAtIndex:xx]];
-        
+
+        if(self.useNibHeight)
+	        self.headerHeight = cell.TitleView.frame.size.height;
+        else
+            self.headerHeight = kCCHeaderHeight;
         
         // Set cell.TitleView's backgroundColor
         if ([(id)CollapseClickDelegate respondsToSelector:@selector(colorForCollapseClickTitleViewAtIndex:)]) {
             cell.TitleView.backgroundColor = [CollapseClickDelegate colorForCollapseClickTitleViewAtIndex:xx];
         }
-        else {
-            cell.TitleView.backgroundColor = [UIColor colorWithWhite:0.4 alpha:1.0];
-        }
-        
+//        else {
+//            cell.TitleView.backgroundColor = [UIColor colorWithWhite:0.4 alpha:1.0];
+//        }
+
         
         // Set cell.TitleLabel's Color
         if ([(id)CollapseClickDelegate respondsToSelector:@selector(colorForTitleLabelAtIndex:)]) {
             cell.TitleLabel.textColor = [CollapseClickDelegate colorForTitleLabelAtIndex:xx];
         }
-        else {
-            cell.TitleLabel.textColor = [UIColor whiteColor];
-        }
-        
+//        else {
+//            cell.TitleLabel.textColor = [UIColor whiteColor];
+//        }
+
         
         // Set cell.TitleArrow's Color
         if ([(id)CollapseClickDelegate respondsToSelector:@selector(colorForTitleArrowAtIndex:)]) {
             [cell.TitleArrow drawWithColor:[CollapseClickDelegate colorForTitleArrowAtIndex:xx]];
         }
-        else {
-            [cell.TitleArrow drawWithColor:[UIColor colorWithWhite:0.0 alpha:0.35]];
-        }
+//        else {
+//            [cell.TitleArrow drawWithColor:[UIColor colorWithWhite:0.0 alpha:0.35]];
+//        }
         
         // Set cell.ContentView's size
-        cell.ContentView.frame = CGRectMake(0, kCCHeaderHeight + kCCPad, self.frame.size.width, cell.ContentView.frame.size.height);
+        cell.ContentView.frame = CGRectMake(0, self.headerHeight + kCCPad, self.frame.size.width, cell.ContentView.frame.size.height);
         
         // Set cell's size
-        cell.frame = CGRectMake(0, totalHeight, self.frame.size.width, kCCHeaderHeight);
+        cell.frame = CGRectMake(0, totalHeight, self.frame.size.width, self.headerHeight);
         
         
         // Add target to Button
@@ -120,7 +131,7 @@
         [self.dataArray addObject:cell];
         
         // Calculate totalHeight
-        totalHeight += kCCHeaderHeight + kCCPad;
+        totalHeight += self.headerHeight + kCCPad;
     }
     
     // Set self's ContentSize and ContentOffset
@@ -213,7 +224,7 @@
         [UIView animateWithDuration:duration animations:^{
             // Resize Cell
             CollapseClickCell *cell = [self.dataArray objectAtIndex:index];
-            cell.frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, cell.frame.size.width, kCCHeaderHeight);
+            cell.frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, cell.frame.size.width, self.headerHeight);
             
             // Change Arrow orientation
             CGAffineTransform transform = CGAffineTransformMakeRotation(0);

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CollapseClickCell.h"
 
-#define kCCPad 10
+#define kCCPad 0
 
   //////////////
  // Delegate //
@@ -44,6 +44,7 @@
 // Properties
 @property (nonatomic, retain) NSMutableArray *isClickedArray;
 @property (nonatomic, retain) NSMutableArray *dataArray;
+@property (nonatomic, assign) BOOL useNibHeight;
 
 // Methods
 -(void)reloadCollapseClick;

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C6F12DA18030644001384F0 /* CollapseClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F12D418030644001384F0 /* CollapseClick.m */; };
+		6C6F12DB18030644001384F0 /* CollapseClickArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F12D618030644001384F0 /* CollapseClickArrow.m */; };
+		6C6F12DC18030644001384F0 /* CollapseClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F12D818030644001384F0 /* CollapseClickCell.m */; };
+		6C6F12DD18030644001384F0 /* CollapseClickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F12D918030644001384F0 /* CollapseClickCell.xib */; };
 		C067587416F67ECF00CE7AA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587316F67ECF00CE7AA1 /* UIKit.framework */; };
 		C067587616F67ECF00CE7AA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587516F67ECF00CE7AA1 /* Foundation.framework */; };
 		C067587816F67ECF00CE7AA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587716F67ECF00CE7AA1 /* CoreGraphics.framework */; };
@@ -18,10 +22,6 @@
 		C067588A16F67ECF00CE7AA1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C067588916F67ECF00CE7AA1 /* Default-568h@2x.png */; };
 		C067588D16F67ECF00CE7AA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C067588C16F67ECF00CE7AA1 /* ViewController.m */; };
 		C067589016F67ECF00CE7AA1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C067588E16F67ECF00CE7AA1 /* ViewController.xib */; };
-		C067589E16F67EE700CE7AA1 /* CollapseClick.m in Sources */ = {isa = PBXBuildFile; fileRef = C067589816F67EE700CE7AA1 /* CollapseClick.m */; };
-		C067589F16F67EE700CE7AA1 /* CollapseClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C067589A16F67EE700CE7AA1 /* CollapseClickCell.m */; };
-		C06758A016F67EE700CE7AA1 /* CollapseClickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C067589B16F67EE700CE7AA1 /* CollapseClickCell.xib */; };
-		C06758A116F67EE700CE7AA1 /* CollapseClickArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = C067589D16F67EE700CE7AA1 /* CollapseClickArrow.m */; };
 		C06758A716F6803C00CE7AA1 /* password-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C06758A516F6803C00CE7AA1 /* password-01.png */; };
 		C06758A816F6803C00CE7AA1 /* username-01.png in Resources */ = {isa = PBXBuildFile; fileRef = C06758A616F6803C00CE7AA1 /* username-01.png */; };
 		C06758E816F6ADE200CE7AA1 /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = C06758E616F6ADE200CE7AA1 /* icon57.png */; };
@@ -29,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C6F12D318030644001384F0 /* CollapseClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollapseClick.h; path = ../../CollapseClick/CollapseClick.h; sourceTree = "<group>"; };
+		6C6F12D418030644001384F0 /* CollapseClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollapseClick.m; path = ../../CollapseClick/CollapseClick.m; sourceTree = "<group>"; };
+		6C6F12D518030644001384F0 /* CollapseClickArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollapseClickArrow.h; path = ../../CollapseClick/CollapseClickArrow.h; sourceTree = "<group>"; };
+		6C6F12D618030644001384F0 /* CollapseClickArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollapseClickArrow.m; path = ../../CollapseClick/CollapseClickArrow.m; sourceTree = "<group>"; };
+		6C6F12D718030644001384F0 /* CollapseClickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollapseClickCell.h; path = ../../CollapseClick/CollapseClickCell.h; sourceTree = "<group>"; };
+		6C6F12D818030644001384F0 /* CollapseClickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollapseClickCell.m; path = ../../CollapseClick/CollapseClickCell.m; sourceTree = "<group>"; };
+		6C6F12D918030644001384F0 /* CollapseClickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollapseClickCell.xib; path = ../../CollapseClick/CollapseClickCell.xib; sourceTree = "<group>"; };
 		C067587016F67ECF00CE7AA1 /* CollapseClickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapseClickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C067587316F67ECF00CE7AA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C067587516F67ECF00CE7AA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,13 +52,6 @@
 		C067588B16F67ECF00CE7AA1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C067588C16F67ECF00CE7AA1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C067588F16F67ECF00CE7AA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		C067589716F67EE700CE7AA1 /* CollapseClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollapseClick.h; sourceTree = "<group>"; };
-		C067589816F67EE700CE7AA1 /* CollapseClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapseClick.m; sourceTree = "<group>"; };
-		C067589916F67EE700CE7AA1 /* CollapseClickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollapseClickCell.h; sourceTree = "<group>"; };
-		C067589A16F67EE700CE7AA1 /* CollapseClickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapseClickCell.m; sourceTree = "<group>"; };
-		C067589B16F67EE700CE7AA1 /* CollapseClickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapseClickCell.xib; sourceTree = "<group>"; };
-		C067589C16F67EE700CE7AA1 /* CollapseClickArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollapseClickArrow.h; sourceTree = "<group>"; };
-		C067589D16F67EE700CE7AA1 /* CollapseClickArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapseClickArrow.m; sourceTree = "<group>"; };
 		C06758A516F6803C00CE7AA1 /* password-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password-01.png"; sourceTree = "<group>"; };
 		C06758A616F6803C00CE7AA1 /* username-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "username-01.png"; sourceTree = "<group>"; };
 		C06758E616F6ADE200CE7AA1 /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
@@ -134,13 +134,13 @@
 		C067589616F67ED800CE7AA1 /* CollapseClick Components */ = {
 			isa = PBXGroup;
 			children = (
-				C067589716F67EE700CE7AA1 /* CollapseClick.h */,
-				C067589816F67EE700CE7AA1 /* CollapseClick.m */,
-				C067589916F67EE700CE7AA1 /* CollapseClickCell.h */,
-				C067589A16F67EE700CE7AA1 /* CollapseClickCell.m */,
-				C067589B16F67EE700CE7AA1 /* CollapseClickCell.xib */,
-				C067589C16F67EE700CE7AA1 /* CollapseClickArrow.h */,
-				C067589D16F67EE700CE7AA1 /* CollapseClickArrow.m */,
+				6C6F12D318030644001384F0 /* CollapseClick.h */,
+				6C6F12D418030644001384F0 /* CollapseClick.m */,
+				6C6F12D518030644001384F0 /* CollapseClickArrow.h */,
+				6C6F12D618030644001384F0 /* CollapseClickArrow.m */,
+				6C6F12D718030644001384F0 /* CollapseClickCell.h */,
+				6C6F12D818030644001384F0 /* CollapseClickCell.m */,
+				6C6F12D918030644001384F0 /* CollapseClickCell.xib */,
 			);
 			name = "CollapseClick Components";
 			sourceTree = "<group>";
@@ -201,11 +201,11 @@
 				C067588816F67ECF00CE7AA1 /* Default@2x.png in Resources */,
 				C067588A16F67ECF00CE7AA1 /* Default-568h@2x.png in Resources */,
 				C067589016F67ECF00CE7AA1 /* ViewController.xib in Resources */,
-				C06758A016F67EE700CE7AA1 /* CollapseClickCell.xib in Resources */,
 				C06758A716F6803C00CE7AA1 /* password-01.png in Resources */,
 				C06758A816F6803C00CE7AA1 /* username-01.png in Resources */,
 				C06758E816F6ADE200CE7AA1 /* icon57.png in Resources */,
 				C06758E916F6ADE200CE7AA1 /* icon114.png in Resources */,
+				6C6F12DD18030644001384F0 /* CollapseClickCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +219,9 @@
 				C067588016F67ECF00CE7AA1 /* main.m in Sources */,
 				C067588416F67ECF00CE7AA1 /* AppDelegate.m in Sources */,
 				C067588D16F67ECF00CE7AA1 /* ViewController.m in Sources */,
-				C067589E16F67EE700CE7AA1 /* CollapseClick.m in Sources */,
-				C067589F16F67EE700CE7AA1 /* CollapseClickCell.m in Sources */,
-				C06758A116F67EE700CE7AA1 /* CollapseClickArrow.m in Sources */,
+				6C6F12DA18030644001384F0 /* CollapseClick.m in Sources */,
+				6C6F12DB18030644001384F0 /* CollapseClickArrow.m in Sources */,
+				6C6F12DC18030644001384F0 /* CollapseClickCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

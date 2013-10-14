@@ -12,6 +12,8 @@
 		6C6F12DC18030644001384F0 /* CollapseClickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F12D818030644001384F0 /* CollapseClickCell.m */; };
 		6C6F12DD18030644001384F0 /* CollapseClickCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F12D918030644001384F0 /* CollapseClickCell.xib */; };
 		6CAE487C1806FB090001150D /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE487B1806FB090001150D /* TitleView.m */; };
+		6CC472E5180C34FA00554200 /* expand_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CC472E3180C34FA00554200 /* expand_arrow.png */; };
+		6CC472E6180C34FA00554200 /* expand_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CC472E4180C34FA00554200 /* expand_arrow@2x.png */; };
 		C067587416F67ECF00CE7AA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587316F67ECF00CE7AA1 /* UIKit.framework */; };
 		C067587616F67ECF00CE7AA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587516F67ECF00CE7AA1 /* Foundation.framework */; };
 		C067587816F67ECF00CE7AA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587716F67ECF00CE7AA1 /* CoreGraphics.framework */; };
@@ -39,6 +41,8 @@
 		6C6F12D918030644001384F0 /* CollapseClickCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollapseClickCell.xib; path = ../../CollapseClick/CollapseClickCell.xib; sourceTree = "<group>"; };
 		6CAE487A1806FB090001150D /* TitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleView.h; path = ../../CollapseClick/TitleView.h; sourceTree = "<group>"; };
 		6CAE487B1806FB090001150D /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleView.m; path = ../../CollapseClick/TitleView.m; sourceTree = "<group>"; };
+		6CC472E3180C34FA00554200 /* expand_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expand_arrow.png; sourceTree = "<group>"; };
+		6CC472E4180C34FA00554200 /* expand_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expand_arrow@2x.png"; sourceTree = "<group>"; };
 		C067587016F67ECF00CE7AA1 /* CollapseClickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapseClickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C067587316F67ECF00CE7AA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C067587516F67ECF00CE7AA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +82,8 @@
 		C067586716F67ECF00CE7AA1 = {
 			isa = PBXGroup;
 			children = (
+				6CC472E3180C34FA00554200 /* expand_arrow.png */,
+				6CC472E4180C34FA00554200 /* expand_arrow@2x.png */,
 				C06758E616F6ADE200CE7AA1 /* icon57.png */,
 				C06758E716F6ADE200CE7AA1 /* icon114.png */,
 				C067587916F67ECF00CE7AA1 /* CollapseClickDemo */,
@@ -211,6 +217,8 @@
 				C06758E816F6ADE200CE7AA1 /* icon57.png in Resources */,
 				C06758E916F6ADE200CE7AA1 /* icon114.png in Resources */,
 				6C6F12DD18030644001384F0 /* CollapseClickCell.xib in Resources */,
+				6CC472E5180C34FA00554200 /* expand_arrow.png in Resources */,
+				6CC472E6180C34FA00554200 /* expand_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

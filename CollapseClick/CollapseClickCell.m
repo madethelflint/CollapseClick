@@ -19,6 +19,12 @@
     return self;
 }
 
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    if(self.arrowImageName)
+        self.TitleArrow.hidden = YES;
+}
+
 + (CollapseClickCell *)newCollapseClickCellWithTitle:(NSString *)title index:(int)index content:(UIView *)content {
     NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CollapseClickCell" owner:nil options:nil];
     CollapseClickCell *cell; // = [[CollapseClickCell alloc] initWithFrame:CGRectMake(0, 0, 320, kCCHeaderHeight)];

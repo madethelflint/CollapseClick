@@ -112,6 +112,9 @@
 //        else {
 //            [cell.TitleArrow drawWithColor:[UIColor colorWithWhite:0.0 alpha:0.35]];
 //        }
+
+        cell.arrowImageName = @"expand_arrow";
+        cell.arrowImage.image = [UIImage imageNamed:cell.arrowImageName];
         
         // Set cell.ContentView's size
         cell.ContentView.frame = CGRectMake(0, self.headerHeight + kCCPad, self.frame.size.width, cell.ContentView.frame.size.height);
@@ -189,13 +192,18 @@
             
             // Change Arrow orientation
             CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
-            cell.TitleArrow.transform = transform;
+//            cell.TitleArrow.transform = transform;
+            cell.arrowImage.transform = transform;
             
             // Change isClickedArray
             [self.isClickedArray replaceObjectAtIndex:index withObject:[NSNumber numberWithBool:YES]];
             
             // Reposition all CollapseClickCells below Cell
             [self repositionCollapseClickCellsBelowIndex:index withOffset:cell.ContentView.frame.size.height + kCCPad];
+        } completion:^(BOOL finished) {
+//            CollapseClickCell *cell = self.dataArray[index];
+//            cell.arrowImageName = @"collapse_arrow";
+//            cell.arrowImage.image = [UIImage imageNamed:cell.arrowImageName];
         }];
     }
 }
@@ -217,6 +225,7 @@
 -(void)closeCollapseClickCellAtIndex:(int)index animated:(BOOL)animated {
     // Check if it's open first
     if ([[self.isClickedArray objectAtIndex:index] boolValue] == YES) {
+
         float duration = 0;
         if (animated) {
             duration = 0.25;
@@ -228,13 +237,18 @@
             
             // Change Arrow orientation
             CGAffineTransform transform = CGAffineTransformMakeRotation(0);
-            cell.TitleArrow.transform = transform;
+//            cell.TitleArrow.transform = transform;
+            cell.arrowImage.transform = transform;
             
             // Change isClickedArray
             [self.isClickedArray replaceObjectAtIndex:index withObject:[NSNumber numberWithBool:NO]];
             
             // Reposition all CollapseClickCells below Cell
             [self repositionCollapseClickCellsBelowIndex:index withOffset:-1*(cell.ContentView.frame.size.height + kCCPad)];
+        } completion:^(BOOL finished) {
+//            CollapseClickCell *cell = self.dataArray[index];
+//            cell.arrowImageName = @"expand_arrow";
+//            cell.arrowImage.image = [UIImage imageNamed:cell.arrowImageName];
         }];
     }
 }

@@ -28,8 +28,8 @@
 + (CollapseClickCell *)newCollapseClickCellWithTitle:(NSString *)title index:(int)index content:(UIView *)content {
     NSString *nibName = @"CollapseClickCell";
 
-//    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-//        nibName = @"CollapseClickCell_iPad";
+    if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+        nibName = @"CollapseClickCell_iPad";
 
     NSArray* views = [[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil];
     CollapseClickCell *cell; // = [[CollapseClickCell alloc] initWithFrame:CGRectMake(0, 0, 320, kCCHeaderHeight)];

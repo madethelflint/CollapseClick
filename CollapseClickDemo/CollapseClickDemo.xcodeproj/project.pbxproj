@@ -14,6 +14,7 @@
 		6CAE487C1806FB090001150D /* TitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE487B1806FB090001150D /* TitleView.m */; };
 		6CC472E5180C34FA00554200 /* expand_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CC472E3180C34FA00554200 /* expand_arrow.png */; };
 		6CC472E6180C34FA00554200 /* expand_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CC472E4180C34FA00554200 /* expand_arrow@2x.png */; };
+		6CC472EC180C3EFB00554200 /* CollapseClickCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC472EB180C3EFB00554200 /* CollapseClickCell_iPad.xib */; };
 		C067587416F67ECF00CE7AA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587316F67ECF00CE7AA1 /* UIKit.framework */; };
 		C067587616F67ECF00CE7AA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587516F67ECF00CE7AA1 /* Foundation.framework */; };
 		C067587816F67ECF00CE7AA1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C067587716F67ECF00CE7AA1 /* CoreGraphics.framework */; };
@@ -43,6 +44,7 @@
 		6CAE487B1806FB090001150D /* TitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleView.m; path = ../../CollapseClick/TitleView.m; sourceTree = "<group>"; };
 		6CC472E3180C34FA00554200 /* expand_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expand_arrow.png; sourceTree = "<group>"; };
 		6CC472E4180C34FA00554200 /* expand_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expand_arrow@2x.png"; sourceTree = "<group>"; };
+		6CC472EB180C3EFB00554200 /* CollapseClickCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollapseClickCell_iPad.xib; path = ../../CollapseClick/CollapseClickCell_iPad.xib; sourceTree = "<group>"; };
 		C067587016F67ECF00CE7AA1 /* CollapseClickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapseClickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C067587316F67ECF00CE7AA1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C067587516F67ECF00CE7AA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -152,6 +154,7 @@
 				6C6F12D718030644001384F0 /* CollapseClickCell.h */,
 				6C6F12D818030644001384F0 /* CollapseClickCell.m */,
 				6C6F12D918030644001384F0 /* CollapseClickCell.xib */,
+				6CC472EB180C3EFB00554200 /* CollapseClickCell_iPad.xib */,
 			);
 			name = "CollapseClick Components";
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				6C6F12DD18030644001384F0 /* CollapseClickCell.xib in Resources */,
 				6CC472E5180C34FA00554200 /* expand_arrow.png in Resources */,
 				6CC472E6180C34FA00554200 /* expand_arrow@2x.png in Resources */,
+				6CC472EC180C3EFB00554200 /* CollapseClickCell_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

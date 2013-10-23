@@ -19,6 +19,7 @@
     [super viewDidLoad];
     myCollapseClick.CollapseClickDelegate = self;
     myCollapseClick.useNibHeight = YES;
+    myCollapseClick.contentSizeBuffer = 180;
     [myCollapseClick reloadCollapseClick];
     
     // If you want a cell open on load, run this method:

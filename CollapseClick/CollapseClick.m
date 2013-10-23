@@ -153,7 +153,12 @@
     
     // Resize self.ContentSize
     CollapseClickCell *lastCell = [self.dataArray objectAtIndex:self.dataArray.count - 1];
-    [self setContentSize:CGSizeMake(self.frame.size.width, lastCell.frame.origin.y + lastCell.frame.size.height + kCCPad)];
+    CGFloat height = lastCell.frame.origin.y + lastCell.frame.size.height + kCCPad;
+
+    if(self.contentSizeBuffer < self.window.frame.size.height - height)
+	    [self setContentSize:CGSizeMake(self.frame.size.width, height)];
+    else
+        [self setContentSize:CGSizeMake(self.frame.size.width, height + self.contentSizeBuffer)];
 }
 
 

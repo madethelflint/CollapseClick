@@ -45,6 +45,7 @@
 @property (nonatomic, retain) NSMutableArray *isClickedArray;
 @property (nonatomic, retain) NSMutableArray *dataArray;
 @property (nonatomic, assign) BOOL useNibHeight;
+@property (nonatomic, assign) NSInteger contentSizeBuffer;
 
 // Methods
 -(void)reloadCollapseClick;

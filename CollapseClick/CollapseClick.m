@@ -86,7 +86,7 @@
 	        self.headerHeight = cell.TitleView.frame.size.height;
         else
             self.headerHeight = kCCHeaderHeight;
-        
+
         // Set cell.TitleView's backgroundColor
         if ([(id)CollapseClickDelegate respondsToSelector:@selector(colorForCollapseClickTitleViewAtIndex:)]) {
             cell.TitleView.backgroundColor = [CollapseClickDelegate colorForCollapseClickTitleViewAtIndex:xx];
@@ -125,7 +125,7 @@
         
         // Add target to Button
         [cell.TitleButton addTarget:self action:@selector(didSelectCollapseClickButton:) forControlEvents:UIControlEventTouchUpInside];
-        
+
         // Add cell
         [self addSubview:cell];
         
@@ -135,6 +135,12 @@
         
         // Calculate totalHeight
         totalHeight += self.headerHeight + kCCPad;
+
+        if(cell.TitleView.hidden){
+//            [self didSelectCollapseClickButton:cell.TitleButton];
+            [self openCollapseClickCellAtIndex:xx animated:NO];
+        }
+
     }
     
     // Set self's ContentSize and ContentOffset

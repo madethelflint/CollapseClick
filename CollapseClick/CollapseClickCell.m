@@ -34,12 +34,21 @@
     NSArray* views = [[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil];
     CollapseClickCell *cell; // = [[CollapseClickCell alloc] initWithFrame:CGRectMake(0, 0, 320, kCCHeaderHeight)];
     cell = [views objectAtIndex:0];
-    
+
     // Initialization Here
     cell.TitleLabel.text = title;
     cell.index = index;
     cell.TitleButton.tag = index;
-    cell.ContentView.frame = CGRectMake(cell.ContentView.frame.origin.x, cell.ContentView.frame.origin.y, cell.ContentView.frame.size.width, content.frame.size.height);
+
+    CGRect newFrame = CGRectMake(cell.ContentView.frame.origin.x, cell.ContentView.frame.origin.y, cell.ContentView.frame.size.width, content.frame.size.height);
+    if([title isEqualToString:@""]){
+        cell.TitleView.hidden = YES;
+        newFrame = CGRectMake(cell.ContentView.frame.origin.x, cell.ContentView.frame.origin.y - cell.TitleView.frame.size.height, cell.ContentView.frame.size.width, cell.ContentView.frame.size.height);
+        content.frame = CGRectMake(content.frame.origin.x, content.frame.origin.y - cell.TitleView.frame.size.height, content.frame.size.width, content.frame.size.height);
+    }else{
+        cell.TitleView.hidden = NO;
+    }
+    cell.ContentView.frame = newFrame;
     [cell.ContentView addSubview:content];
     
     return cell;

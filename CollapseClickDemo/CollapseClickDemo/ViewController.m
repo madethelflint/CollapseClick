@@ -46,7 +46,7 @@
 
 // Required Methods
 -(int)numberOfCellsForCollapseClick {
-    return 3;
+    return 4;
 }
 
 -(NSString *)titleForCollapseClickAtIndex:(int)index {
@@ -78,7 +78,9 @@
         case 2:
             return test3View;
             break;
-            
+        case 3:
+            return descrView;
+            break;
         default:
             return test1View;
             break;
